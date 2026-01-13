@@ -4,4 +4,4 @@ Live Link: https://ogwunma.github.io/buggy-web-form/
 
 Tools Used: MTestLink, MantisBT, and GitHub.
 
-Bug Summary: Identified 19 test cases and found/logged 6 bugs.
+Bug Summary: Identified 19 test cases and found/logged bugs.
