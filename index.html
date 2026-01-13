@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHALLENGE - Spot the BUGS!</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; max-width: 600px; }
+        .field { margin-bottom: 10px; } /* Bug: inconsistent spacing */
+        input, select { width: 100%; padding: 8px; margin-top: 5px; }
+        label { font-weight: bold; }
+        .helper { font-size: 12px; color: #666; }
+        button { background: #4285f4; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        .link { color: blue; cursor: default; } /* Bug: styled like link but no anchor tag */
+    </style>
+</head>
+<body>
+    <h1>CHALLENGE - Spot the BUGS!</h1>
+    <p>This page contains at least 15 bugs. How many of them can you spot?</p>
+
+    <div class="field">
+        <label>First Name</label> <input type="text" placeholder="Enter first name">
+    </div>
+
+    <div class="field">
+        <label>Last Name*</label>
+        <input type="text" placeholder="Enter last name">
+    </div>
+    <p class="helper">Note: All the fields marked with * are mandatory</p>
+
+    <div class="field">
+        <label>Phone number*</label> <input type="text" placeholder="Enter phone number">
+        <div class="helper">Phone length validation: at least 10 digits</div>
+    </div>
+
+    <div class="field">
+        <label>Country</label> <select>
+            <option>Select a country...</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <label>Email address*</label> <input type="email" placeholder="Enter email">
+    </div>
+
+    <div class="field">
+        <label>Password*</label>
+        <input type="password" placeholder="Password">
+        <div class="helper">Psw length validation: [6,20] characters</div> </div>
+
+    <div class="field">
+        <input type="checkbox" style="width: auto;"> 
+        I agree with the <span class="link">terms and conditions</span> </div>
+
+    <button type="button">Register</button> </body>
+</html>
